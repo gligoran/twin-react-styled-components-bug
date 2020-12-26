@@ -1,0 +1,36 @@
+{
+  "babelMacros": {
+    "twin": {
+      "preset": "styled-components",
+      "css": {
+        "from": "styled-components",
+        "import": "css"
+      },
+      "styled": {
+        "import": "default",
+        "from": "styled-components"
+      },
+      "global": {
+        "import": "createGlobalStyle",
+        "from": "styled-components"
+      }
+    }
+  },
+  "scripts": {
+    "start": "parcel index.html --open",
+    "build": "parcel build index.html"
+  },
+  "dependencies": {
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@tailwindcss/forms": "^0.2.1",
+    "parcel-bundler": "^1.12.4",
+    "postcss": "^8.2.1",
+    "styled-components": "^5.2.1",
+    "tailwindcss": "^2.0.2",
+    "twin.macro": "^2.0.7"
+  }
+}
