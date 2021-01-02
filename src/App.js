@@ -1,5 +1,7 @@
 import React from 'react'
-import tw, { GlobalStyles, styled } from 'twin.macro'
+import tw, { styled } from 'twin.macro'
+
+import CSSReset from './CSSReset'
 
 const Input = styled.input`
   ${tw`shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md`}
@@ -8,7 +10,7 @@ import ExternalInput from './Input'
 
 const App = () => (
   <>
-    <GlobalStyles />
+    <CSSReset />
 
     <div tw="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center block p-6 bg-gray-200">
       <div>
